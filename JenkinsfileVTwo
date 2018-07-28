@@ -16,6 +16,11 @@ pipeline {
             steps {
                 build job: 'Deploy-to-staging'
             }
+		  post {
+                success {
+                    echo 'Successfully deployed to staging'
+                    archiveArtifacts artifacts: '**/target/*.war'
+                }
         }
     }
 }
