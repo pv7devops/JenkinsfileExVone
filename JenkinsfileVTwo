@@ -21,6 +21,7 @@ pipeline {
                     echo 'Successfully deployed to staging'
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
+		}
         }
     }
 }
