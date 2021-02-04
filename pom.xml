@@ -27,6 +27,11 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-71-147.ec2.internal-snapshots</name>
+        <url>http://ec2-44-192-67-82.compute-1.amazonaws.com:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
