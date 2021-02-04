@@ -10,6 +10,13 @@
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
+         
+<parent>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-parent</artifactId>
+         <version>1.0.0.RELEASE</version>
+         <relativePath /> 
+</parent>
 
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
