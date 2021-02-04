@@ -62,6 +62,17 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
+        <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+            <releaseProfiles>release</releaseProfiles>
+            <goals>deploy assembly:single</goals>
+            <!--
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            -->
+        </configuration>
+    </plugin>
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
